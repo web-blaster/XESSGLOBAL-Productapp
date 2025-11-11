@@ -55,16 +55,50 @@ npm run dev
 #Start Laravel development server
 php artisan serve
 
-#Assets
+##Assets
 
 All project assets, including the database and API collection, are available inside the assets folder.
 
 Make sure to run npm run dev to compile CSS/JS using Vite.
 
-#Default Login Credentials
+##Default Login Credentials
 
 Use the following to access the system:
 
 Email: admin@example.com
 
 Password: password123
+
+##Project Structure
+XESSGLOBAL-Productapp/
+├── app/                # Application logic
+├── bootstrap/
+├── config/
+├── database/
+│   ├── migrations/
+│   └── seeders/
+├── public/             # Public assets
+├── resources/
+│   ├── css/
+│   ├── js/
+│   └── views/
+├── routes/
+├── storage/
+├── tests/
+├── composer.json
+├── package.json
+└── vite.config.js
+
+##API Usage (Optional)
+
+Authentication
+
+Endpoint: /api/login
+
+Method: POST
+
+Body:{
+  "email": "admin@example.com",
+  "password": "password123"
+}
+
