@@ -33,3 +33,38 @@ npm install
 cp .env.example .env
 
 #Generate application key
+php artisan key:generate
+
+#Configure .env database credentials
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=xess_global_product_app
+DB_USERNAME=root
+DB_PASSWORD=
+
+#Run migrations
+php artisan migrate
+
+#Optionally, seed the database
+php artisan db:seed
+
+#Compile assets using Vite
+npm run dev
+
+#Start Laravel development server
+php artisan serve
+
+#Assets
+
+All project assets, including the database and API collection, are available inside the assets folder.
+
+Make sure to run npm run dev to compile CSS/JS using Vite.
+
+#Default Login Credentials
+
+Use the following to access the system:
+
+Email: admin@example.com
+
+Password: password123
